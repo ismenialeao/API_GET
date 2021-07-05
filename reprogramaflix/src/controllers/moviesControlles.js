@@ -17,8 +17,8 @@ const getById = (request, response) => {
 }
 
 const getByTitle = (request, response) => {
-    const requestedTitle = request.query.title.toLowerCase()
-    const filteredTitle = movies.find( movie => movie.title. title.toLowerCase() .includes(requestedTitle))
+    const requestedTitle = request.query.title.toLowerCase() //acessando solicitado na request
+    const filteredTitle = movies.find(movie => movie.title.toLowerCase().includes(requestedTitle)) //filtrar titulo no json
     
 
     if (filteredTitle === ""|| filteredTitle === undefined) {
